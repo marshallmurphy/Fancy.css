@@ -673,23 +673,29 @@ Created by Tyler Murphy (2016) and licensed under MIT.
 }
 
 @-webkit-keyframes orbit {
-  from, 25%, 50%, 75%, to {
+  from , 20% {
     animation-timing-function: linear;
+  }
+  40% {
+    animation-timing-function: cubic-bezier(.46,.73,.89,.9);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(.62,.4,.95,.88);
   }
 
   from {
     -webkit-transform: rotate(0deg) translateX(100px) scale(1) rotate(0deg);
     transform: rotate(0deg) translateX(100px) scale(1) rotate(0deg);
   }
-  25% {
+  20% {
     -webkit-transform: rotate(90deg) translateX(100px) scale(1.5) rotate(-90deg);
     transform: rotate(90deg) translateX(100px) scale(1.5) rotate(-90deg);
   }
-  50% {
+  40% {
     -webkit-transform: rotate(180deg) translateX(100px) scale(1) rotate(-180deg);
     transform: rotate(180deg) translateX(100px) scale(1) rotate(-180deg);
   }
-  75% {
+  70% {
     -webkit-transform: rotate(270deg) translateX(100px) scale(0.5) rotate(-270deg);
     transform: rotate(270deg) translateX(100px) scale(0.5) rotate(-270deg);
   }
@@ -698,25 +704,30 @@ Created by Tyler Murphy (2016) and licensed under MIT.
     transform: rotate(360deg) translateX(100px) scale(1) rotate(-360deg);
   }
 }
-
 @keyframes orbit {
-  from, 25%, 50%, 75%, to {
+  from , 20% {
     animation-timing-function: linear;
+  }
+  40% {
+    animation-timing-function: cubic-bezier(.46,.73,.89,.9);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(.62,.4,.95,.88);
   }
 
   from {
     -webkit-transform: rotate(0deg) translateX(100px) scale(1) rotate(0deg);
     transform: rotate(0deg) translateX(100px) scale(1) rotate(0deg);
   }
-  25% {
+  20% {
     -webkit-transform: rotate(90deg) translateX(100px) scale(1.5) rotate(-90deg);
     transform: rotate(90deg) translateX(100px) scale(1.5) rotate(-90deg);
   }
-  50% {
+  40% {
     -webkit-transform: rotate(180deg) translateX(100px) scale(1) rotate(-180deg);
     transform: rotate(180deg) translateX(100px) scale(1) rotate(-180deg);
   }
-  75% {
+  70% {
     -webkit-transform: rotate(270deg) translateX(100px) scale(0.5) rotate(-270deg);
     transform: rotate(270deg) translateX(100px) scale(0.5) rotate(-270deg);
   }
