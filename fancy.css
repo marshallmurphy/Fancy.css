@@ -671,6 +671,10 @@ Created by Tyler Murphy (2016) and licensed under MIT.
   -webkit-animation-name: orbit;
   animation-name: orbit;
 }
+.fancy.orbit {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
 
 @-webkit-keyframes orbit {
   from , 20% {
@@ -999,6 +1003,7 @@ Created by Tyler Murphy (2016) and licensed under MIT.
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
+}
 
   /* toInfinity */
   .toInfinity {
@@ -1061,5 +1066,480 @@ Created by Tyler Murphy (2016) and licensed under MIT.
   to {
     -webkit-transform: rotate(90deg) translateX(0px) rotate(-90deg);
     transform: rotate(90deg) translateX(0px) rotate(-90deg);
+  }
+}
+
+/* Down Nudge */
+.downNudge {
+  -webkit-animation-name: downNudge;
+  animation-name: downNudge;
+}
+
+.fancy.downNudge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes downNudge {
+  from, 10%, 20%, 30%, 50%, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    -webkit-transform: translate3d(0px,0,0);
+    transform: translate3d(0px,0,0);
+  }
+  10% {
+    -webkit-transform: translate3d(0px,30px,0);
+    transform: translate3d(0px,30px,0);
+  }
+  20% {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+  }
+  30% {
+    -webkit-transform: translate3d(0px,30px,0);
+    transform: translate3d(0px,30px,0);
+  }
+  50% {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+  }
+}
+
+keyframes downNudge {
+  from, 10%, 20%, 30%, 50%, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    -webkit-transform: translate3d(0px,0,0);
+    transform: translate3d(0px,0,0);
+  }
+  10% {
+    -webkit-transform: translate3d(0px,30px,0);
+    transform: translate3d(0px,30px,0);
+  }
+  20% {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+  }
+  30% {
+    -webkit-transform: translate3d(0px,30px,0);
+    transform: translate3d(0px,30px,0);
+  }
+  50% {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+  }
+}
+
+/* Cliff */
+.cliff {
+  -webkit-animation-name: cliff;
+  animation-name: cliff;
+}
+
+.fancy.cliff {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes cliff {
+  from {
+    animation-timing-function: linear;
+  }
+
+  from {
+    opacity: 1;
+    transform: translate3d(0px,0,0) rotate(0deg);
+  }
+  40% {
+    opacity: 1;
+    transform: translate3d(100px,0,0) rotate(180deg);
+  }
+  80% {
+    opacity: 0;
+    transform: translate3d(100px,200px,0) rotate(240deg);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100px,200px,0) rotate(240deg);
+  }
+}
+
+keyframes cliff {
+  from {
+    animation-timing-function: linear;
+  }
+
+  from {
+    opacity: 1;
+    transform: translate3d(0px,0,0) rotate(0deg);
+  }
+  40% {
+    opacity: 1;
+    transform: translate3d(100px,0,0) rotate(180deg);
+  }
+  80% {
+    opacity: 0;
+    transform: translate3d(100px,200px,0) rotate(240deg);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(100px,200px,0) rotate(240deg);
+  }
+}
+
+/* Run */
+.run {
+  -webkit-animation-name: run;
+  animation-name: run;
+}
+
+@-webkit-keyframes run {
+  from , 25%, 50%, 75%, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: rotateX(-80deg) rotateY(-0deg);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(80deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(-80deg) rotateY(-0deg);
+  }
+}
+
+keyframes run {
+  from , 25%, 50%, 75%, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: rotateX(-80deg) rotateY(-0deg);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(80deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(-80deg) rotateY(-0deg);
+  }
+}
+
+/* Grow */
+
+.grow {
+  -webkit-animation-name: grow;
+  animation-name: grow;
+}
+
+.fancy.grow{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes grow {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+keyframes grow {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+/* Shrink */
+.shrink {
+  -webkit-animation-name: shrink;
+  animation-name: shrink;
+}
+
+.fancy.shrink{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes shrink {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.6);
+  }
+}
+
+keyframes shrink {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.6);
+  }
+}
+/* Forward */
+.forward {
+  -webkit-animation-name: forward;
+  animation-name: forward;
+}
+
+.fancy.forward{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes forward {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: translate3d(0px,0,0);
+  }
+  50% {
+    transform: translate3d(10px,0,0);
+  }
+  to {
+    transform: translate3d(10px,0,0);
+  }
+}
+
+keyframes forward {
+  from, to {
+    animation-timing-function: linear;
+  }
+
+  from {
+    transform: translate3d(0px,0,0);
+  }
+  50% {
+    transform: translate3d(10px,0,0);
+  }
+  to {
+    transform: translate3d(10px,0,0);
+  }
+}
+/* Backward */
+.backward {
+  -webkit-animation-name: backward;
+  animation-name: backward;
+}
+
+.fancy.backward{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes backward {
+  from, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: translate3d(0px,0,0);
+  }
+  50% {
+    transform: translate3d(-10px,0,0);
+  }
+  to {
+    transform: translate3d(-10px,0,0);
+  }
+}
+
+keyframes backward {
+  from, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: translate3d(0px,0,0);
+  }
+  50% {
+    transform: translate3d(-10px,0,0);
+  }
+  to {
+    transform: translate3d(-10px,0,0);
+  }
+}
+/* Growtate */
+.growtate {
+  -webkit-animation-name: growtate;
+  animation-name: growtate;
+}
+
+.fancy.growtate{
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes growtate {
+  from, 70%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: rotateZ(0deg) scale(1);
+  }
+  70% {
+    transform: rotateZ(45deg) scale(1.5);
+  }
+  to {
+    transform: rotateZ(45deg) scale(1.5);
+  }
+}
+
+keyframes growtate {
+  from, 70%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: rotateZ(0deg) scale(1);
+  }
+  70% {
+    transform: rotateZ(45deg) scale(1.5);
+  }
+  to {
+    transform: rotateZ(45deg) scale(1.5);
+  }
+}
+/* Double Bounce */
+.doubleBounce {
+  -webkit-animation-name: doubleBounce;
+  animation-name: doubleBounce;
+}
+
+@-webkit-keyframes doubleBounce {
+  from, 20%, 30%, 50%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.5);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+keyframes doubleBounce {
+  from, 20%, 30%, 50%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.5);
+  }
+  30% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+/* Pulse */
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  from, 25%, 50%, 75%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+keyframes pulse {
+  from, 25%, 50%, 75%, to {
+    animation-timing-function: linear;
+  }
+  from {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
