@@ -12,8 +12,9 @@ While Fancy.css will work on any icon, I suggest using the FontAwesome library o
 
 ###Basic Use
 To animate your icon:
+
 1. Reference the *fancy.css* file from your index.html (or other root file).
-  * <link href="fancy.css" rel="stylesheet">
+<link href="fancy.css" rel="stylesheet">
 
 2. Assign a class to your icon that contains the word *fancy* and the name of the animation.
   * class="fancy orbit"
