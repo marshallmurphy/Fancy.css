@@ -38,7 +38,7 @@ Example:
 .fancy.cliff {
 
   -webkit-animation-duration: 1.5s;
-  
+
   animation-duration: 1.5s;
 
 }
@@ -51,6 +51,6 @@ Example
   * class = "fancy **infinite** orbit"
 
 ---
-Fancy.css is not unique. There are many others like it. But this one is mine.
+> Fancy.css is not unique. There are many others like it. But this one is mine.
 
 *Created by Marshall Murphy (2016) and licensed under MIT.*
