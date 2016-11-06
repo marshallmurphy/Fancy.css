@@ -6,7 +6,7 @@ Fancy.css is a growing library of animations focused on giving icons the unique 
 
 Sometimes wacky, often unnecessary, and on rare occasions... useful, Fancy.css is CSS only (no JavaScript!) and very simple to implement.
 
-While Fancy.css will work on any icon, I suggest using the FontAwesome library of icons.
+While Fancy.css will work on any icon, I suggest using the **FontAwesome** library of icons.
 
 ---
 
@@ -14,16 +14,17 @@ While Fancy.css will work on any icon, I suggest using the FontAwesome library o
 To animate your icon:
 
 1. Reference the *fancy.css* file from your index.html (or other root file).
-<link href="fancy.css" rel="stylesheet">
+  * href = "../folder/location/of/fancy.css"
 
 2. Assign a class to your icon that contains the word *fancy* and the name of the animation.
-  * class="fancy orbit"
+  * class = "fancy orbit"
 
 That's it!
 
 ---
 ###Advanced Use
-- Animation Duration
+- **Animation Duration**
+
 The majority of *Fancy.css* animations run for a duration of 2 seconds (2s).
 There are many exceptions, of course, with durations ranging from .5s to 3s.
 
@@ -33,18 +34,27 @@ To override the duration of any animation, include some css code containing the 
   * animation-duration override.
 
 Example:
+
 .fancy.cliff {
+
   -webkit-animation-duration: 1.5s;
+
   animation-duration: 1.5s;
+
 }
 
-- Infinite Animations
+- **Infinite Animations**
+
 To make the animation repeat indefinitely, simple include the word *infinite* along with the class declarations *fancy* and [*animation-name*].
 
 Example
-  * class="fancy infinite orbit"
+  * class = "fancy **infinite** orbit"
 
 ---
-There are other like it, but this one is mine.
+Fancy.css is not unique.
+
+There are many others like it. 
+
+But this one is mine.
 
 *Created by Marshall Murphy (2016) and licensed under MIT.*
