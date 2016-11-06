@@ -14,10 +14,10 @@ While Fancy.css will work on any icon, I suggest using the **FontAwesome** libra
 To animate your icon:
 
 1. Reference the *fancy.css* file from your index.html (or other root file).
-  * href = "../folder/location/of/fancy.css"
+  * href = "../folder/location/of/**fancy.css**"
 
 2. Assign a class to your icon that contains the word *fancy* and the name of the animation.
-  * class = "fancy orbit"
+  * class = "**fancy orbit**"
 
 That's it!
 
@@ -38,7 +38,6 @@ Example:
 .fancy.cliff {
 
   -webkit-animation-duration: 1.5s;
-
   animation-duration: 1.5s;
 
 }
@@ -51,10 +50,6 @@ Example
   * class = "fancy **infinite** orbit"
 
 ---
-Fancy.css is not unique.
-
-There are many others like it. 
-
-But this one is mine.
+Fancy.css is not unique. There are many others like it. But this one is mine.
 
 *Created by Marshall Murphy (2016) and licensed under MIT.*
