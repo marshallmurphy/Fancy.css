@@ -16,7 +16,7 @@ To animate your icon:
   * <link href="fancy.css" rel="stylesheet">
 
 2. Assign a class to your icon that contains the word *fancy* and the name of the animation.
-  * <i class="fancy orbit"></i>
+  * class="fancy orbit"
 
 That's it!
 
@@ -41,7 +41,7 @@ Example:
 To make the animation repeat indefinitely, simple include the word *infinite* along with the class declarations *fancy* and [*animation-name*].
 
 Example
-* <i class="fancy infinite orbit"></i>
+  * class="fancy infinite orbit"
 
 ---
 There are other like it, but this one is mine.
