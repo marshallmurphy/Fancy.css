@@ -38,6 +38,7 @@ Example:
 .fancy.cliff {
 
   -webkit-animation-duration: 1.5s;
+  
   animation-duration: 1.5s;
 
 }
