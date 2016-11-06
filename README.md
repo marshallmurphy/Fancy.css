@@ -14,10 +14,10 @@ While Fancy.css will work on any icon, I suggest using the **FontAwesome** libra
 To animate your icon:
 
 1. Reference the *fancy.css* file from your index.html (or other root file).
-  * ```<a href = "../location/of/**fancy.css**"></a>```
+  * ```<a href = "../location/of/fancy.css"></a>```
 
 2. Assign a class to your icon that contains the word *fancy* and the name of the animation.
-  * ```<i class = "**fancy orbit**"></i>```
+  * ```<i class = "fancy orbit"></i>```
 
 That's it!
 
@@ -45,7 +45,7 @@ To override the duration of any animation, include some css code containing the 
 To make the animation repeat indefinitely, simple include the word *infinite* along with the class declarations *fancy* and [*animation-name*].
 
 Example
-  * ```<i class = "fancy **infinite** orbit"></i>```
+  * ```<i class = "fancy infinite orbit"></i>```
 
 ---
 > Fancy.css is not unique. There are many others like it. But this one is mine.
